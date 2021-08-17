@@ -29,7 +29,7 @@ def predict():
         lr = pickle.load(open('data2.pkl', 'rb'))
         prediction=lr.predict(ls)[0]
         #prediction = lr[0].predict(ls)
-        return render_template('index.html', prediction=prediction)
+    return render_template('index.html', prediction=prediction)
 
 
 if __name__ == '__main__':
