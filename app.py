@@ -2,8 +2,6 @@ from flask import Flask, request
 from flask import render_template
 import pickle
 import pandas
-import sklearn
-
 app = Flask(__name__)
 
 
