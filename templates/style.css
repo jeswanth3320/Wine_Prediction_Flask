@@ -1,0 +1,39 @@
+body{
+  background-image: url('https://2.bp.blogspot.com/-wyiW6CdEYwE/WovLV9WIkfI/AAAAAAAAANM/v0kwVKbwLAAVuFXbwK-50Ktyy72Zo_thgCLcBGAs/s1600/934372-red-wine-wallpaper-2880x1800-hd.jpg');
+}
+.boxy{
+  padding-top: 130px;
+  padding-left: 1200px;
+}
+h1{
+  padding: 50px;
+  padding-left: 800px;
+  color: white;
+}
+label{
+  color: white;
+  display: flex;
+  flex-direction: row;
+
+  text-align: left;
+  width: 400px;
+  line-height: 26px;
+  margin-bottom:4px;
+}
+input{
+  color: white;
+  display: flex;
+  flex-direction: row;
+
+  text-align: left;
+  width: 400px;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+button{
+  background-color: #77e4f7;
+  padding: 20px;
+  width: 150px;
+  margin: auto;
+  border-radius: 20px;
+}

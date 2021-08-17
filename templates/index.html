@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <h1  align=centre class="main">Wine Quality Prediction</h1>
+    <style>
+        body{
+             background-image: url('https://2.bp.blogspot.com/-wyiW6CdEYwE/WovLV9WIkfI/AAAAAAAAANM/v0kwVKbwLAAVuFXbwK-50Ktyy72Zo_thgCLcBGAs/s1600/934372-red-wine-wallpaper-2880x1800-hd.jpg');
+         }
+            .boxy{
+              padding-top: 130px;
+              padding-left: 1200px;
+            }
+            h1{
+              padding: 50px;
+              padding-left: 800px;
+              color: white;
+            }
+            h2{
+               color: white;
+            }
+            label{
+              color: white;
+              display: flex;
+              flex-direction: row;
+
+              text-align: left;
+              width: 400px;
+              line-height: 26px;
+              margin-bottom:4px;
+            }
+            input{
+              color: black;
+              display: flex;
+              flex-direction: row;
+
+              text-align: left;
+              width: 400px;
+              line-height: 26px;
+              margin-bottom: 4px;
+            }
+            button{
+              background-color: #77e4f7;
+              padding: 20px;
+              width: 150px;
+              margin: auto;
+              border-radius: 20px;
+            }
+            .row{
+              padding-left: 1200px;
+              padding: 100px;
+}
+
+    </style>
+</head>
+<body>
+<div class="boxy">
+<form action="/predict" method="post">
+    <label>Fixed acidity</label><input type="text" name="fixed acidity" placeholder='Enter value'><br>
+    <label>Volatile acidity</label><input type="text" name="volatile acidity" placeholder='Enter value'><br>
+    <label>Citric acid</label><input type="text" name="citric acid" placeholder='Enter value'><br>
+    <label>Chlorides</label><input type="text" name="chlorides" placeholder='Enter value'><br>
+    <label>Density</label><input type="text" name="density" placeholder='Enter value'><br>
+    <label>PH</label><input type="text" name="pH" placeholder='Enter value'><br>
+    <label>Sulphates</label><input type="text" name="sulphates" placeholder='Enter value'><br>
+    <label>Alcohol</label><input type="text" name="alcohol" placeholder='Enter value'><br>
+    <label>Type_White</label><input type="text" name="type_white" placeholder='Enter value'><br>
+    <label>Best Quality</label><input type="text" name="best quality" placeholder='Enter value'><br>
+    <button >Predict</button>
+</form>
+    <div class="row">
+    {% if prediction %}
+    <h2>Quality of wine is: {{prediction}}</h2>
+    {% endif %}
+    </div>
+</div>
+
+
+</body>
+</html>
