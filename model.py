@@ -13,7 +13,6 @@ df['pH'].fillna((df['pH'].mean()), inplace=True)
 df['sulphates'].fillna((df['sulphates'].mean()), inplace=True)
 df['chlorides'].fillna((df['chlorides'].mean()), inplace=True)
 new_df=df.drop('total sulfur dioxide',axis=1)
-new_df.update(new_df.fillna(new_df.mean()))
 new_df = pd.get_dummies(new_df,drop_first=True)
 new_df['best quality']=[ 1 if x>=7 else 0 for x in df.quality]
 new_df['best quality']
@@ -48,4 +47,3 @@ pickle.dump(rnd,open('data.pkl','wb'))
 lr = pickle.load(open('data.pkl', 'rb'))
 
 ans=rnd.predict([[7.0,0.270,0.36,0.045,1.00100,3.00,0.450000,8.8,1,0]])[0]
-print(ans)
