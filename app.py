@@ -1,7 +1,7 @@
 import numpy as np
 from flask import Flask, request
 from flask import render_template
-import numpy
+import sklearn
 import pickle
 
 
